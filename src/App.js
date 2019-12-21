@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import $ from 'jquery'
 import axios from 'axios'
+import ChatMain from "./ChatMain";
 class App extends Component{
   constructor(props) {
     super(props);
@@ -58,9 +59,12 @@ class App extends Component{
         </div>
     )
     return (
+        <Fragment>
         <div className={"row"}>
           {html}
         </div>
+          <ChatMain/>
+        </Fragment>
     )
   }
 }
